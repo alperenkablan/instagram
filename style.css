@@ -1,0 +1,111 @@
+body {
+  padding: 60px 0 0 0; /* Üstten 60px padding ekliyoruz */
+  background-color: #FAFAFA; /* Instagram'un arka plan rengi */
+
+}
+
+.navbar {
+  height: 54px;
+  background-color: white;
+  width: 100%;
+  position: fixed; /* Navbar'ı sabitliyoruz */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Navbar'ın diğer içeriklerin üzerinde kalmasını sağlıyoruz */
+}
+
+/* Placeholder ve diğer stilleriniz aynı kalabilir */
+/* Arama simgesi yolunu düzeltin, assets klasörüne göre ayarlayın */
+::placeholder {
+  text-align: center;
+  font-size: 14px;
+  color: transparent; /* Yazı rengini transparan yapıyoruz */
+  background-image: url('search-solid.svg'); /* Arka plan resmini ekliyoruz */
+  background-repeat: no-repeat; /* Resmin tekrar etmemesini sağlıyoruz */
+  background-position: 40% center; /* Arka plan resminin pozisyonunu ayarlıyoruz */
+  background-size: 16px; /* Arka plan resminin boyutunu ayarlıyoruz */
+}
+
+
+input.empty {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  background-color: #FAFAFA;
+}
+
+.postuserfont {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  color: black;
+}
+
+.storyphoto {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid rgb(238, 39, 82);
+  margin-right: 7px;
+}
+
+.storytext {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 12px;
+  color: black;
+}
+
+.rightpanellinks {
+  margin-left: 5px; /* Sol kenardan 5 birimlik boşluk */
+  margin-top: 2rem; /* Üst kenardan 2 birimlik boşluk */
+}
+
+
+.rightpanellinks:hover {
+  text-decoration: none;
+  color: lightgrey;
+}
+
+.middlearea {
+  max-height: 200px !important; /* Maksimum yükseklik 200px ve !important ile öncelik */
+}
+
+.storytext {
+    display: block; /* İsimlerin blok halinde görüntülenmesi */
+}
+
+.postoptions {
+  text-align: right; /* Üç noktanın sağa hizalanması */
+}
+
+.postactions {
+  border: none; /* Kenarlık olmaması */
+}
+
+.bookmarkicon {
+  offset: 7; /* Offset değeri */
+}
+
+.card-header,
+.card-footer {
+    background-color: white; /* Beyaz arka plan */
+}
+
+.stickysidebar {
+  position: sticky;
+  top: 0; /* Sayfanın üstüne sabitlenmesini sağlar */
+}
+
+.rightpanel {
+  background-color: white; /* Beyaz arka plan */
+  border: none; /* Kenarlık olmaması */
+}
+
+
+/* Sağ üstteki menü kısmını sayfa sm boyutunda gizleme */
+@media (max-width: 576px) {
+  .rightpanellinks {
+      display: none;
+  }
+}
+
